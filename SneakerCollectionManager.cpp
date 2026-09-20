@@ -4,7 +4,7 @@
 using namespace std;
 
 
-// ==================== ENUMS ====================
+
 
 enum SneakerBrand
 {
@@ -25,7 +25,7 @@ enum SneakerCondition
 };
 
 
-// ==================== STRUCT ====================
+
 
 struct Sneaker
 {
@@ -41,7 +41,7 @@ struct Sneaker
 const int MAX_SNEAKERS = 20;
 
 
-// ==================== BRAND NAME ====================
+
 
 string getBrandName(SneakerBrand brand)
 {
@@ -68,7 +68,7 @@ string getBrandName(SneakerBrand brand)
 }
 
 
-// ==================== CONDITION NAME ====================
+
 
 string getConditionName(SneakerCondition condition)
 {
@@ -95,7 +95,7 @@ string getConditionName(SneakerCondition condition)
 }
 
 
-// ==================== MAIN MENU ====================
+
 
 void displayMenu()
 {
@@ -113,7 +113,6 @@ void displayMenu()
 }
 
 
-// ==================== ADD SNEAKER ====================
 
 void addSneaker(Sneaker Collection[], int& sneakerCount)
 {
@@ -134,7 +133,7 @@ void addSneaker(Sneaker Collection[], int& sneakerCount)
     getline(cin, Collection[sneakerCount].model);
 
 
-    // Brand
+  
     cout << "Select a brand:" << endl;
     cout << "1. Nike" << endl;
     cout << "2. Adidas" << endl;
@@ -171,12 +170,12 @@ void addSneaker(Sneaker Collection[], int& sneakerCount)
     }
 
 
-    // Size
+ 
     cout << "Enter shoe size: ";
     cin >> Collection[sneakerCount].size;
 
 
-    // Condition
+
     cout << "Select a condition:" << endl;
     cout << "1. New" << endl;
     cout << "2. Excellent" << endl;
@@ -213,12 +212,12 @@ void addSneaker(Sneaker Collection[], int& sneakerCount)
     }
 
 
-    // Purchase Price
+ 
     cout << "Enter purchase price: $";
     cin >> Collection[sneakerCount].purchasePrice;
 
 
-    // Estimated Value
+
     cout << "Enter estimated value: $";
     cin >> Collection[sneakerCount].estimatedValue;
 
@@ -229,7 +228,6 @@ void addSneaker(Sneaker Collection[], int& sneakerCount)
 }
 
 
-// ==================== DISPLAY COLLECTION ====================
 
 void displayCollection(const Sneaker Collection[], int sneakerCount)
 {
@@ -267,7 +265,6 @@ void displayCollection(const Sneaker Collection[], int sneakerCount)
 }
 
 
-// ==================== SEARCH BY BRAND ====================
 
 void searchByBrand(const Sneaker Collection[], int sneakerCount)
 {
@@ -405,7 +402,7 @@ void searchByModel(const Sneaker Collection[], int sneakerCount)
 }
 
 
-// ==================== SEARCH MENU ====================
+
 
 void searchCollection(const Sneaker Collection[], int sneakerCount)
 {
@@ -443,7 +440,7 @@ void searchCollection(const Sneaker Collection[], int sneakerCount)
 }
 
 
-// ==================== SORT BY BRAND ====================
+
 
 void sortByBrand(Sneaker Collection[], int sneakerCount)
 {
@@ -466,7 +463,6 @@ void sortByBrand(Sneaker Collection[], int sneakerCount)
 }
 
 
-// ==================== SORT BY MODEL ====================
 
 void sortByModel(Sneaker Collection[], int sneakerCount)
 {
@@ -489,7 +485,7 @@ void sortByModel(Sneaker Collection[], int sneakerCount)
 }
 
 
-// ==================== SORT BY VALUE ====================
+
 
 void sortByValue(Sneaker Collection[], int sneakerCount)
 {
@@ -513,7 +509,7 @@ void sortByValue(Sneaker Collection[], int sneakerCount)
 }
 
 
-// ==================== SORT MENU ====================
+
 
 void sortCollection(Sneaker Collection[], int sneakerCount)
 {
@@ -556,7 +552,7 @@ void sortCollection(Sneaker Collection[], int sneakerCount)
 }
 
 
-// ==================== COLLECTION SUMMARY ====================
+
 
 void displaySummary(const Sneaker Collection[], int sneakerCount)
 {
@@ -616,7 +612,7 @@ void displaySummary(const Sneaker Collection[], int sneakerCount)
 }
 
 
-// ==================== MAIN ====================
+
 
 int main()
 {
