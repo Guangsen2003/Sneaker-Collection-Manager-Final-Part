@@ -1,3 +1,7 @@
+// Sneaker Collection Manager
+// Name: Guangsen Xu
+// Final Project
+
 #include <iostream>
 #include <string>
 #include <iomanip>
